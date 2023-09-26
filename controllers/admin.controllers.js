@@ -75,7 +75,7 @@ const getCanvasProperties = async (req, res) => {
       attributes: {
         exclude: ["createdAt", "updatedAt"],
       },
-      order: [["name", "ASC"]],
+      order: [["id", "ASC"]],
     });
 
     res.status(200).json({
